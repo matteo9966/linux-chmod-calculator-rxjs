@@ -1,0 +1,25 @@
+ul,
+li {
+  all: unset;
+}
+
+.container > form {
+  display: flex;
+}
+.section-select {
+  flex: 1;
+}
+
+.section-select > ul > li {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.result-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  column-gap: 5rem;
+}
