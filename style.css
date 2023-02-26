@@ -3,11 +3,39 @@ li {
   all: unset;
 }
 
+body,
+html {
+  all: unset;
+  box-sizing: border-box;
+  font-family: 'Shantell Sans', cursive;
+}
+
+.title {
+  text-align: center;
+}
+
+.container > * {
+  width: 80vw;
+  display: block;
+  margin: auto;
+}
+
+.container {
+  margin: auto;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100vw;
+  }
+}
 .container > form {
   display: flex;
 }
 .section-select {
   flex: 1;
+  width: 33.3333333333%;
 }
 
 .section-select > ul > li {
@@ -22,4 +50,18 @@ li {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   column-gap: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .result-container {
+    grid-template-columns: 1fr;
+  }
+
+  .result-container > span {
+    visibility: hidden;
+    display: none;
+  }
+  .result-container > input {
+    width: 80%;
+  }
 }
